@@ -2,6 +2,100 @@
 body{
     height: 120vh;
 }
+.header-holder{
+    display: flex; 
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    position: fixed;  
+    right: 0;
+    height: 6vh;
+    width: 100%;
+
+    &:hover{
+        & > .header-top{
+            visibility: hidden;
+        }
+
+        & > .header-bottom{
+            transition: transform 0.7s;
+            visibility: visible;
+            transform: translateY(5px);
+        }
+    }
+
+   & > .header-top{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size: 20px;
+        color: rgb(41, 13, 105);
+        width: 70%;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        height: 4vh;
+        background-color: pink;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 2px 5px 10px rgba(87, 81, 81, 0.6);
+
+        & > .fa-grip-lines{
+            display: flex;
+            margin-top: 10px;
+        }
+    }
+
+    & > .header-bottom {
+        display: inline-flex;  
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        height: 16vh;
+        width: 100%;
+        border-radius: 10px;
+        visibility: hidden;
+        z-index: 1;
+        background-color: pink;
+        color: black;
+    
+                & > .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    flex-direction: row;
+                    margin-left: 3px;
+
+                    & > a {
+                        text-decoration: none;
+
+                        & > button{
+                            padding: 6px 15px;
+                            display: flex;
+                            border-radius: 30px;
+                            border: none;
+                            position: relative;
+                            background-color: skyblue;
+                            color: white;
+                            font-family: "Playwrite DE VA", cursive;
+                            font-size: 12px;
+                            box-shadow: 2px 4px 10px rgb(100, 99, 99);
+                            font-weight: 600;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 3px;
+
+                            &:hover{
+                                transform: scale(1.2);
+                                background-color: rgb(92, 84, 84);
+                            }
+                }
+            }
+            }
+        }
+
+}
 
 .hero2{
     display: flex;
@@ -46,6 +140,7 @@ body{
         font-family: "Playwrite DE VA", cursive;
         background-color: pink;
         border-radius: 7px;
+        font-weight: 800;
 
     }
 
@@ -73,7 +168,7 @@ body{
     & > h1{
         display:flex;   
         justify-content: center; 
-        color: white;
+        color: rgb(161, 157, 157);
         z-index: 1;
         font-weight: 900;
         font-size: 2rem;
