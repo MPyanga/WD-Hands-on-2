@@ -97,15 +97,19 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 300vh;
     background:radial-gradient(rgb(241, 237, 237),rgb(248, 146, 228));
+    gap: 1rem;
 }
 
 .title{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-family: "Titan One", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: yellowgreen;
+    font-weight: 900;
+    
 }
 
 .section1{
@@ -499,7 +503,7 @@ body{
         box-shadow: 10px 10px 15px gray;
 
         &:hover{
-            height: 50vh;
+            height: 47vh;
             background: linear-gradient(0deg, rgb(39, 38, 38) 50%, skyblue 45%);
 
             & > img{
