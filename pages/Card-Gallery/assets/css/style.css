@@ -1,0 +1,461 @@
+
+.header-holder{
+    display: flex; 
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    position: fixed;  
+    right: 0;
+    height: 6vh;
+    width: 100%;
+
+    &:hover{
+        & > .header-top{
+            visibility: hidden;
+        }
+
+        & > .header-bottom{
+            transition: transform 0.7s;
+            visibility: visible;
+            transform: translateY(5px);
+        }
+    }
+
+   & > .header-top{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size: 20px;
+        color: yellow;
+        width: 70%;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        height: 4vh;
+        background-color: rgba(148, 145, 147, 0.3);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 2px 5px 10px rgba(87, 81, 81, 0.6);
+
+        & > .fa-grip-lines{
+            display: flex;
+            margin-top: 10px;
+        }
+    }
+
+    & > .header-bottom {
+        display: inline-flex;  
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        height: 16vh;
+        width: 100%;
+        border-radius: 10px;
+        visibility: hidden;
+        z-index: 1;
+        background-color: yellow;
+        color: black;
+    
+                & > .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    flex-direction: row;
+                    margin-left: 3px;
+
+                    & > a {
+                        text-decoration: none;
+
+                        & > button{
+                            padding: 6px 15px;
+                            display: flex;
+                            border-radius: 30px;
+                            border: none;
+                            position: relative;
+                            background-color: skyblue;
+                            color: white;
+                            font-family: "Playwrite DE VA", cursive;
+                            font-size: 12px;
+                            box-shadow: 2px 4px 10px rgb(100, 99, 99);
+                            font-weight: 600;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 3px;
+
+                            &:hover{
+                                transform: scale(1.2);
+                                background-color: yellow;
+                            }
+                }
+            }
+            }
+        }
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 300vh;
+    background:radial-gradient(rgb(241, 237, 237),rgb(248, 146, 228));
+
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Titan One", sans-serif;
+
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90vh;
+    flex-direction: row;
+    
+    & > .card1-animation{
+        display: flex;
+        justify-content: center;
+        background-image: url(../img/spongebob_background_thing_by_lwbiverse_da62dtt-pre.jpg);
+        height: 65vh;
+        width: 17rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        box-shadow: 12px 15px 15px rgb(51, 167, 196);
+        transition: 1s;
+
+        &:hover{
+            box-shadow: 12px 15px 15px rgb(243, 239, 4);
+        }
+
+        & > .image-m{
+            display: flex;
+            align-items:end;
+            justify-content: center;
+            background-color: saddlebrown;
+            height: 70%;
+            width: 90%;
+
+
+            &:hover{
+                & > .sponge{
+                    visibility: hidden;
+                }
+                & > .patrick{
+                    visibility: visible;
+                }
+            }
+
+            & > .sponge{
+                height: 37vh;
+            }
+            & > .patrick{
+                justify-content: center;
+                height: 45vh;
+                position: absolute;
+                visibility: hidden;
+            }
+
+        }
+
+        & > .title{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+            background-color:yellow;
+            color: black;
+
+            & > h1{
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+            }
+            & > p{
+                margin-top: 7px;
+                margin-left: 10px;
+                margin-right: 10px;
+                font-family: "Playwrite DE VA", cursive;
+                font-size: 14px;
+
+            }
+            
+        }
+        
+            .link{
+                display: flex;
+                width: 100%;
+                justify-content: right;
+                margin-right: 20px;
+
+                & > a{
+                    display: flex;
+                    gap: 7px;
+                    text-decoration: none;
+                    margin-bottom: 5px;
+                    align-items:center;
+                    color: brown;
+                    font-size: 14px;
+
+                    & > .fa-arrow-right{
+                        animation: right 2s infinite;
+                    }
+                }
+
+            }
+        }
+    
+    & > .card2-animation{
+        width: 17rem;
+        height: 60vh;
+
+        & > img{
+            height: 10rem;
+            border-radius: 30px;
+            background-color: wheat;
+        }
+    }
+} 
+.design{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+}
+
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70vh;
+    flex-direction: row;
+
+    & > .card3-animation{
+        background-color: rgb(29, 28, 28);
+        border: 1rem solid rgb(19, 18, 18);
+        height: 55vh;
+        width: 15rem;
+        border-radius: 20px;
+        box-shadow: 10px 10px 15px gray;
+
+        & > .top{
+            height: 55vh;
+            width: 15rem;
+            background: radial-gradient(rgb(207, 25, 207),rgb(253, 96, 253));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            visibility: hidden;
+            transition: .2s;
+            border-radius: 20px;
+
+
+            &:hover{
+                visibility: visible;
+                transform: translateY(-30px) translateX(-10px);
+                box-shadow: 8px 8px 15px rgb(54, 52, 52,0,5);
+                & > .hold > h2 {
+                    color: rgb(7, 253, 7);
+                }
+               
+                }
+
+            & > .hold{
+                visibility: visible;
+
+            & > h2{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 0;
+            }
+
+            & > p {
+                font-family: "Playwrite DE VA", cursive;
+                font-size: 14px;
+                margin-bottom: 2rem;
+                padding:  0 10px 0 10px;
+            }
+            & > button {
+                border: none;
+                background-color: pink;
+                height: 30px;
+                width: 8rem;
+                border-radius: 20px;
+                font-weight: 900;
+                overflow: hidden;
+                
+                &:hover{
+                    background-color:rgb(7, 253, 7);
+                    box-shadow: 7px 5px 15px rgb(37, 37, 37);
+                } 
+            }
+        } 
+    }
+}
+    & > .card4-animation{
+        display: flex;
+        align-items: end;
+        width: 17rem;
+        height: 60vh;
+        filter: brightness(0.9) contrast(1.2) grayscale(0.5); /* Apply filters */
+        transition: 0.2s;
+        border-radius: 10px;
+        background-image: url(../img/shimizu-island-in-el-nido-palawan.jpeg);
+        cursor: pointer;;
+
+        &:hover{
+            height: 65vh;
+            filter: none;
+            box-shadow: 10px 10px 15px gray;
+
+            & > .palawan{
+                transition: 0.3s ease;
+                transform: translateY(-30px);
+                visibility: visible;
+            }
+            }
+        & > .palawan{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            z-index: 3;
+            visibility: hidden;
+            transform: translateY(40px);
+            margin-left: 10px;
+
+
+            & > h1{
+                font-size: 2rem;
+                font-weight: 900;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 0;
+        }
+            & > p{
+                margin-top: 0;
+                font-family: "Playwrite DE VA", cursive;  
+                font-size: 16px;  
+                font-weight: 500;      
+              }
+            & > button {
+                border: none;
+                width: 7rem;
+                height: 2rem;
+                background-color: rgb(104, 21, 182);
+                font-weight: 700;
+                border-radius: 10px;
+                color: white;
+                
+                &:hover{
+                    transform: translateY(-4px);
+                    box-shadow: 5px 5px 15px rgb(150, 147, 147);
+                }
+            }
+
+            }
+    }
+}
+
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50vh;
+    flex-direction: row;
+
+    & > .card5-animation{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 18rem;
+        height: 40vh;
+        background: linear-gradient(345deg, rgb(39, 38, 38) 47%, skyblue 45%);
+        transition: 0.4s ease;
+        border-radius: 20px;
+        box-shadow: 10px 10px 15px gray;
+
+        &:hover{
+            height: 45vh;
+            background: linear-gradient(0deg, rgb(39, 38, 38) 50%, skyblue 45%);
+            & > img{
+                margin-top: 10px;
+                height: 8rem;
+                animation-play-state: paused;
+            }
+            & > button {
+                visibility: visible;
+            }
+            & > b{
+                margin-top: 25px;
+            }
+        }
+        & > img{
+            margin-top: 1rem;
+            height: 9rem;
+            animation: shoes 2s infinite;
+        }
+        & > b{
+            margin-top: 20px;
+            font-family: "Playwrite DE VA", cursive;
+            color: white;
+            font-size: 1.2rem;
+
+        }
+        & > p {
+            font-family: "Playwrite DE VA", cursive;
+            color: skyblue;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        & > button {
+            display: flex;
+            justify-content: center;
+            padding: 10px 17px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            visibility: hidden;
+            background-color: skyblue;
+            border: none;
+            font-family: "Playwrite DE VA", cursive;
+            font-weight: 900;
+            transition: 1s ease;
+
+            &:hover{
+                animation: glow 2s ease-out;
+            }
+        }
+    }
+    }
+@keyframes shoes {
+    0%{
+
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(-0);
+    }
+}
+@keyframes glow {
+    0%{
+
+    }
+    100%{
+        background-color: beige;
+    }
+  
+}
