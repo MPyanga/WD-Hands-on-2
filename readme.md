@@ -9,18 +9,17 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Hero & Cards</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+An engaging web project featuring hero sections and card gallery
 </div>
-
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=MPyanga/WD-Hands-on-2)
 
 ---
 
@@ -57,20 +56,16 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+The project involves creating a visually appealing web page section with a "hero" component and multiple "cards" that feature hover effects and animations. The purpose of this project is to enhance user engagement and improve the user experience on a web page by incorporating dynamic visual elements. The hero section aims to capture the user's attention immediately, while the animated cards offer an interactive element that encourages users to explore more content.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Hover
+- Navigations
+- Animations
+- Header
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -90,7 +85,7 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-Hands-on-2
 └─ assets
 |   └─ css
 |   |   └─ style.css
@@ -99,15 +94,60 @@ WD-ProjectName
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ Hero1
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+└─ └─ Hero2
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+|  └─ Hero3
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+|  └─ Hero4
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+|  └─ Hero5
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+└─ └─ Card-Gallery
 |     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
+|      |  └─ css
+|      |  |  └─ style.css
+|      |  └─ img
+|      |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|      |  └─ js
+|      |     └─ script.js
+|      └─ index.html
 └─ index.html
 └─ readme.md
 ```
@@ -117,4 +157,6 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| w3schools | To learn animation and transitions. | https://www.w3schools.com/css/default.asp |
+| fontawesome | To get fonts that serves as symbols |	https://fontawesome.com
+| Bootstrap | To get fonts that serves as symbols and to use the breadcrumb for header | https://getbootstrap.com|

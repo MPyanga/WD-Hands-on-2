@@ -43,6 +43,7 @@
         background-color: rgba(255, 255, 255, 0.267);
         border-radius: 10px;
         box-shadow: -5px -7px 10px rgba(87, 81, 81, 0.6);
+        cursor: pointer;
 
         & > .fa-grip-lines-vertical{
             margin-left: 8px;
@@ -61,7 +62,8 @@
         visibility: hidden;
         z-index: 1;
         background: rgb(77,81,84);
-        background: linear-gradient(4deg, rgba(77,81,84,1) 38%, rgba(105,69,69,1) 85%);        color: black;
+        background: linear-gradient(4deg, rgba(77,81,84,1) 38%, rgba(105,69,69,1) 85%);       
+        color: black;
     
                 & > .button {
                     display: flex;
@@ -86,13 +88,11 @@
                         font-size: 12px;
                         box-shadow: 2px 4px 10px rgb(100, 99, 99);
                         font-weight: 600;
-
-
-
+                        cursor: pointer;
                 }
             }
-            }
         }
+    }
 
 }
     
@@ -125,7 +125,7 @@
     .container2{
         display: flex;
         position: relative;
-        width: 40%;
+        width: 35%;
         margin: 0;
         background-position: center;
         background-size: cover; 
@@ -143,17 +143,19 @@
 
         & > h1 {
             font-family: "Titan One", sans-serif;
-            font-weight: 300;
+            font-weight: 700;
             font-style: normal;   
-            font-size: 4rem;
-            letter-spacing: 5px;
+            font-size: 3rem;
+            letter-spacing: 4px;
             margin-bottom: 20px;    
         }
+
         & > h4 {
             margin-bottom: 0;
             font-family: "Playwrite DE VA", cursive;
             letter-spacing: 5px;
         }
+
         & > i {
             font-weight: 900;
             text-align: center;
