@@ -302,7 +302,17 @@ body{
     font-family: "Anton", sans-serif;
     letter-spacing: 2px;
 }
+@keyframes right {
+    0%{
 
+    }
+    50%{
+        transform: translateX(7px);
+    }
+    100%{
+        
+    }  
+}
 @keyframes patrick {
     0%{
 
