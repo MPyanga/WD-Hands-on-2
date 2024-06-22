@@ -539,7 +539,6 @@ body{
             border: none;
             font-family: "Playwrite DE VA", cursive;
             font-weight: 900;
-            transition: 1s ease;
 
             &:hover{
                 animation: glow 2s ease-out;
